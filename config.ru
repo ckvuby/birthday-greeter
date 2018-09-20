@@ -1,1 +1,2 @@
-require_relative './birthday.rb'
+require_relative './app.rb'
+run Birthday
