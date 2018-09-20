@@ -11,3 +11,11 @@ feature 'it asks for the a name' do
     expect(page).to have_content "What's your name"
   end
 end
+
+feature 'user are able to enter there name' do
+  scenario 'Expects players to be able fill there name in form and see there it after submitting it' do
+    visit('/')
+    click_button('Go!')
+    expect(page).to have_content "Vu its your birthday!"
+  end
+end
